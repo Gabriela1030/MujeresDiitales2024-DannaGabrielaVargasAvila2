@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffcc99; 
+  color: white;
+  border: none;
+  border-radius: 12px; /* bordes más redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b58e; /* Un tono más oscuro para el hover */
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: separate; 
+  border-spacing: 0; /* Espaciado entre celdas */
+  border-radius: 12px; /*  bordes de la tabla */
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px; /*  padding para hacer las celdas más espaciosas */
+  text-align: center;
+  background-color: white; 
+}
+
+th {
+  background-color: #ffcc99; /* color peach */
+  color: white;
+  border: none; /* Eliminamos el borde del header */
+}
+
+td {
+  border-top: 1px solid #f0f0f0; /* Un borde superior suave */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px; /* Bordes redondeados para las entradas */
+  box-sizing: border-box; 
+}
