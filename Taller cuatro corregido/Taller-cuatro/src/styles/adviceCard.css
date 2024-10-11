@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Altura completa de la pantalla */
+    margin: 0;
+    background-color: #242424; /* Fondo oscuro */
+}
+
+.card {
+    background-color: #313a49;
+    color: #cdd5f7;
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    max-width: 400px;
+    width: 100%;  /* Asegura que se ajuste al ancho de la pantalla en dispositivos pequeños */
+    margin: 0 auto; 
+}
+
+.advice-id {
+    font-size: 0.75rem;
+    color: #52ffa8;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+
+.advice-text {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;  /* Mejora la legibilidad del texto */
+}
+
+/* Centramos las líneas divisorias correctamente */
+.divider-desktop,
+.divider-mobile {
+    display: block;
+    margin: 1.5rem auto;  /* Centrado horizontal y espacio adecuado */
+    max-width: 100%;      /* Asegura que no excedan el ancho del contenedor */
+}
+
+/* Para pantallas móviles */
+.divider-desktop {
+    display: none;
+}
+
+.divider-mobile {
+    display: block;
+}
+
+.dice-button {
+    background-color: #52ffa8;
+    border: none;
+    border-radius: 50%;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 2rem auto; /* Centra el botón en su contenedor */
+    transition: transform 0.3s ease;  /* Transición suave al hover */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.dice-button:hover {
+    box-shadow: 0px 0px 15px rgba(82, 255, 168, 0.6);
+    transform: scale(1.1);  /* Efecto de zoom al pasar el mouse */
+}
+
+.error {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .card {
+        padding: 1.5rem;
+    }
+
+    .advice-text {
+        font-size: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .dice-button {
+        padding: 0.75rem;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+    .divider-desktop {
+        display: block;
+    }
+
+    .divider-mobile {
+        display: none;
+    }
+}
